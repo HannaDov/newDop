@@ -40,7 +40,7 @@ type PropsType=
     }
 
 function App() {
-    const [todos, setTodos] = useState<Array<PropsType>>([])
+    const [todos, setTodos] = useState<PropsType[]>([])
 
     useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/todos')
